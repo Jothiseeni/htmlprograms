@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Just a Reminder 😌</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(120deg, #ffe0b2, #ffccbc);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            top: 120px;
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        h1 {
+            color: #ff7043;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff7043;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f4511e;
+        }
+
+        /* Flying emojis */
+        .emoji {
+            position: absolute;
+            font-size: 30px;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Flying emojis -->
+<div class="emoji" style="left:10%; animation-delay:0s;">💌</div>
+<div class="emoji" style="left:25%; animation-delay:2s;">😏</div>
+<div class="emoji" style="left:40%; animation-delay:4s;">✨</div>
+<div class="emoji" style="left:55%; animation-delay:1s;">💖</div>
+<div class="emoji" style="left:70%; animation-delay:3s;">🙃</div>
+<div class="emoji" style="left:85%; animation-delay:5s;">🫶</div>
+
+<div class="container">
+    <h1>Hey. Don’t Act Surprised 😌</h1>
+
+    <p>I know we said “let’s see where this goes”…</p>
+    <p>And then we never actually went anywhere 🚶‍♂️</p>
+
+    <p>But somehow, here I am.</p>
+    <p>Still popping up in your thoughts like a notification you can’t mute 🔔</p>
+
+    <p>
+        Not your past ❌<br>
+        Not your future ❌<br>
+        Just your ✨ favorite unfinished chapter ✨
+    </p>
+
+    <button onclick="alert('Oops 😏 You thought of me again')">
+        Click at your own risk 😌
+    </button>
+</div>
+
+</body>
+</html>
+
+>
